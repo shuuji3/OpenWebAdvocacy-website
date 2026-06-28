@@ -39,8 +39,17 @@ import htmlminTransform from './src/transforms/htmlminTransform.js';
 // Utils
 import groupEntriesByYear from './src/utils/group-entries-by-year.js';
 
+import { EventEmitter } from 'events';
+EventEmitter.prototype.setMaxListeners(0);
+EventEmitter.defaultMaxListeners = 0;
 export default config => {
   // Add filters
+  config.addFilter('cjkSpan', text =>
+    text.replace(
+      /([\u2E80-\u2FFF\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\u3100-\u312F\u31F0-\u31FF\u3200-\u33FF\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\uFE30-\uFE4F\uFF00-\uFFEF]+)/g,
+      '<span style="font-family: \'Noto Sans JP\', sans-serif">$1</span>',
+    ),
+  );
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('localisedDateFilter', localisedDateFilter);
   config.addFilter('hostnameFilter', hostnameFilter);
@@ -87,6 +96,12 @@ export default config => {
           name: 'Kumbh Sans Regular',
           data: readFileSync('./src/css/fonts/KumbhSans-700.woff'),
           weight: 400,
+          style: 'normal',
+        },
+        {
+          name: 'Noto Sans JP',
+          data: readFileSync('./src/css/fonts/NotoSansJP-Bold.ttf'),
+          weight: 700,
           style: 'normal',
         },
       ],
