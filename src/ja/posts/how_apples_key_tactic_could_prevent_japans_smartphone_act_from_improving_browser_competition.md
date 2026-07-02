@@ -11,7 +11,6 @@ author: OWA
 permalink: >-
   /ja/blog/how_apples_key_tactic_could_prevent_japans_smartphone_act_from_improving_browser_competition/index.html
 layout: layouts/post.njk
-translated: true
 ---
 
 <span style="color: var(--main-color);">翻訳：綾坂こと</span>

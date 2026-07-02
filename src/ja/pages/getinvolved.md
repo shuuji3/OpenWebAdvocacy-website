@@ -3,7 +3,6 @@ title: 参加しよう
 permalink: /ja/get-involved/
 metaDesc: Open Web Advocacyの活動に参加する方法について。
 layout: layouts/page.njk
-translated: true
 ---
 
 開かれたウェブを守る活動に、ぜひ参加してください。議員や規制当局への働きかけから、反競争的行為の証拠収集と文書化の支援まで、協力できる方法はたくさんあります。

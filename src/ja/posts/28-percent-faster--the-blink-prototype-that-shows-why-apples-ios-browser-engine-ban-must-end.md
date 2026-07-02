@@ -13,7 +13,6 @@ author: OWA
 permalink: >-
   /ja/blog/28-percent-faster--the-blink-prototype-that-shows-why-apples-ios-browser-engine-ban-must-end/index.html
 layout: layouts/post.njk
-translated: true
 ---
 
 **要約: 新たに公開されたテスト結果によると、iOSで動作するChromium/Blinkのプロトタイプは、Speedometer 3.1のページ応答性テストにおいてSafariより28.6%高速であることが示されました。また、このテストは、プロトタイプではすでに利用可能なものの、競合ブラウザベンダーがiOSへ導入することを阻まれているウェブ機能が数多く存在することも明らかにしました。これは、Appleによる第三者製ブラウザエンジンの禁止措置が、消費者、企業、ひいてはウェブ全体にどれほどの損失をもたらしているかを如実に物語る例です。**
