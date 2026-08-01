@@ -22,3 +22,6 @@ src/_includes/css
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Lighthouse CI
+.lighthouseci/

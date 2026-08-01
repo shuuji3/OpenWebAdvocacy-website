@@ -14,7 +14,8 @@
     "updates": "npx npm-check-updates -i --format group",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
-    "test:debug": "npx playwright test --debug"
+    "test:debug": "npx playwright test --debug",
+    "lighthouse": "npm run production && npx lhci autorun"
   },
   "engines": {
     "node": ">=26"
@@ -44,6 +45,7 @@
     "rgjs7": "^0.0.88"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "netlify-plugin-cache": "^1.0.3",
